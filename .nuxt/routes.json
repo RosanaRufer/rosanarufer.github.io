@@ -3,30 +3,35 @@
     "name": "contact",
     "path": "/contact",
     "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/contact.vue",
-    "chunkName": "pages/contact"
+    "chunkName": "pages/contact",
+    "_name": "_a6d8791c"
   },
   {
     "name": "cv",
     "path": "/cv",
     "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/cv.vue",
-    "chunkName": "pages/cv"
+    "chunkName": "pages/cv",
+    "_name": "_2c7fc491"
   },
   {
     "name": "lists",
     "path": "/lists",
     "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/lists.vue",
-    "chunkName": "pages/lists"
+    "chunkName": "pages/lists",
+    "_name": "_d235b232"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug?",
     "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/blog/_slug.vue",
-    "chunkName": "pages/blog/_slug"
+    "chunkName": "pages/blog/_slug",
+    "_name": "_27f8e3fb"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_a2a3f4b8"
   }
 ]
