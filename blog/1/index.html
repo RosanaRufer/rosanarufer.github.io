@@ -1,0 +1,105 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <link rel="preload" href="/_nuxt/1779e6c.js" as="script"><link rel="preload" href="/_nuxt/b140dbb.js" as="script"><link rel="preload" href="/_nuxt/aa6e32b.js" as="script"><link rel="preload" href="/_nuxt/3644c91.js" as="script"><link rel="preload" href="/_nuxt/0a69034.js" as="script"><style data-vue-ssr-id="5c670272:0 517a8dd7:0 019e1cef:0">:root{font-size:18px}.container{max-width:900px;margin:0 auto}code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;transition:width .1s,opacity .4s;background-color:#000;z-index:999999}.nuxt-progress.nuxt-progress-notransition{transition:none}.nuxt-progress-failed{background-color:red}</style><link rel="preload" href="/_nuxt/static/1629899162/blog/1/state.js" as="script"><link rel="preload" href="/_nuxt/static/1629899162/blog/1/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1629899162/manifest.js" as="script">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div class="container"><h1>Rosana Rufer</h1> <a href="/" class="nuxt-link-active">Blog</a> <a href="/lists">Lists</a> <a href="/contact">Contact</a> <hr> <article><div class="nuxt-content"><h2 id="rebuilding-this-site-using-nuxt"><a aria-hidden="true" href="#rebuilding-this-site-using-nuxt" tabindex="-1"><span class="icon icon-link"></span></a>Rebuilding this site using nuxt</h2>
+<pre>Date: 3 March 2021</pre>
+<p>It's been 5 years since I created my personal site. Back then I built the template with Bootstrap 3 and each page was an HTML file repeating the same base template. It's clear it's <strong>time for a Makeover</strong> 💃🏻.</p>
+<h3 id="why-nuxt"><a aria-hidden="true" href="#why-nuxt" tabindex="-1"><span class="icon icon-link"></span></a>Why Nuxt</h3>
+<p>I've chosen Nuxt just because it's been in recent conversations at work and it's in VueJS, which is one of the most used JavaScript frameworks.</p>
+<h3 id="approach"><a aria-hidden="true" href="#approach" tabindex="-1"><span class="icon icon-link"></span></a>Approach</h3>
+<p>I wanted to go from the ground up, I chose <strong>not to use the app generator</strong> (<code>create nuxt-app</code>) because it was full of add-ons I won't need for a simple website hosted on a Github Page.
+These are the <strong>minimalistic</strong> steps:</p>
+<h4 id="1-init-a-packagejson-with-nuxt"><a aria-hidden="true" href="#1-init-a-packagejson-with-nuxt" tabindex="-1"><span class="icon icon-link"></span></a>1. Init a package.json with nuxt</h4>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>mkdir &lt;project-name> && cd &lt;project-name>
+touch package.json
+yarn add nuxt
+</code></pre></div>
+<h4 id="2-add-the-scripts-section"><a aria-hidden="true" href="#2-add-the-scripts-section" tabindex="-1"><span class="icon icon-link"></span></a>2. Add the scripts section</h4>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>File: package.json
+---
+"scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+}
+</code></pre></div>
+<h4 id="3-create-the-layout"><a aria-hidden="true" href="#3-create-the-layout" tabindex="-1"><span class="icon icon-link"></span></a>3. Create the layout</h4>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>mkdir layouts
+touch layouts/default.vue
+</code></pre></div>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>File: layouts/default.vue
+---
+&lt;template>
+  &lt;div>
+      &lt;h1>Rosana Rufer&lt;/h1>
+      &lt;NuxtLink to="/">Blog&lt;/NuxtLink>
+      &lt;NuxtLink to="/contact">Contact&lt;/NuxtLink>
+       &lt;hr>
+      &lt;Nuxt /> &lt;!-- ⬅️ This is where pages will be injected -->
+  &lt;/div>
+&lt;/template>
+</code></pre></div>
+<h4 id="4-create-the-simple-pages"><a aria-hidden="true" href="#4-create-the-simple-pages" tabindex="-1"><span class="icon icon-link"></span></a>4. Create the simple pages</h4>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>touch pages/index.vue
+touch pages/contact.vue
+</code></pre></div>
+<h4 id="5-create-the-blog-functionality"><a aria-hidden="true" href="#5-create-the-blog-functionality" tabindex="-1"><span class="icon icon-link"></span></a>5. Create the blog functionality</h4>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>yarn add @nuxt/content
+mkdir content
+mkdir content/blog
+echo "# First post" >> content/blog/first.md
+touch pages/blog/_slug.vue
+</code></pre></div>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>File: nuxt.config.js
+----
+export default {
+  modules: ['@nuxt/content']
+}
+</code></pre></div>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>File: pages/blog/_slug.vue
+---
+&lt;template>
+  &lt;article>
+    &lt;nuxt-content :document="article" />
+  &lt;/article>
+&lt;/template>
+&lt;script>
+  export default {
+    async asyncData({ $content, params }) {
+      const article = await $content('blog', params.slug).fetch()
+      return { article }
+    }
+  }
+&lt;/script>
+</code></pre></div>
+<p>And it's done!!</p>
+<h3 id="how-to-deploy-it"><a aria-hidden="true" href="#how-to-deploy-it" tabindex="-1"><span class="icon icon-link"></span></a>How to deploy it</h3>
+<h4 id="1-edit-nuxtconfigjson"><a aria-hidden="true" href="#1-edit-nuxtconfigjson" tabindex="-1"><span class="icon icon-link"></span></a>1. Edit nuxt.config.json</h4>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>File: nuxt.config.js
+----
+export default {
+  target: 'static'
+  ...
+}
+</code></pre></div>
+<h4 id="2-add-push-dir-to-the-project"><a aria-hidden="true" href="#2-add-push-dir-to-the-project" tabindex="-1"><span class="icon icon-link"></span></a>2. Add push-dir to the project</h4>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>npm install push-dir --save-dev
+</code></pre></div>
+<h4 id="3-edit-your-packagejson"><a aria-hidden="true" href="#3-edit-your-packagejson" tabindex="-1"><span class="icon icon-link"></span></a>3. Edit your package.json</h4>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>File: package.json
+---
+"scripts": {
+  ...
+  "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+},
+</code></pre></div>
+<h4 id="4-generate-and-deploy"><a aria-hidden="true" href="#4-generate-and-deploy" tabindex="-1"><span class="icon icon-link"></span></a>4. Generate and deploy</h4>
+<div class="nuxt-content-highlight"><pre class="language-text line-numbers"><code>npm run generate
+npm run deploy
+</code></pre></div></div></article></div></div></div><script defer src="/_nuxt/static/1629899162/blog/1/state.js"></script><script src="/_nuxt/1779e6c.js" defer></script><script src="/_nuxt/0a69034.js" defer></script><script src="/_nuxt/b140dbb.js" defer></script><script src="/_nuxt/aa6e32b.js" defer></script><script src="/_nuxt/3644c91.js" defer></script>
+  </body>
+</html>
