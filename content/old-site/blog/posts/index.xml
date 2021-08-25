@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Rosana&#39;s notebook</title>
+    <link>http://rosanarufer.github.io/blog/posts/</link>
+    <description>Recent content in Posts on Rosana&#39;s notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 May 2019 09:08:18 +0100</lastBuildDate>
+    
+	<atom:link href="http://rosanarufer.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python: First Contact</title>
+      <link>http://rosanarufer.github.io/blog/posts/python-first-contact/</link>
+      <pubDate>Mon, 06 May 2019 09:08:18 +0100</pubDate>
+      
+      <guid>http://rosanarufer.github.io/blog/posts/python-first-contact/</guid>
+      <description>I am very excited to learn Python because this language builds a bridge between science and software development, opening doors for working side-by-side between us.
+🐍 ➡ ⚗️👩🏾‍🔬🤝🏻‍👨🏿‍💻📚 In this post I will highlight the things I consider the most important and surprising for a person like me, more used to JavaScript and TypeScript.
+Functions Functions are defined as below and the arguments can have a default value, just like in JavaScript:</description>
+    </item>
+    
+    <item>
+      <title>Reading JavaScript Allongé</title>
+      <link>http://rosanarufer.github.io/blog/posts/javascript-allonge-summary/</link>
+      <pubDate>Sat, 20 Apr 2019 19:58:49 +0100</pubDate>
+      
+      <guid>http://rosanarufer.github.io/blog/posts/javascript-allonge-summary/</guid>
+      <description>I am currently reading this amazing book called &amp;ldquo;JavaScript Allongé&amp;rdquo; and I would like to use my blog as a notebook to summarize the parts I found the most interesting. Table of content As a general rule for effective learning when reading, it is recommended that you read the table of contents and get an idea of what the book contains and how it is structured.
+This book&amp;rsquo;s table of content is a bit messy and some titles are not very descriptive, after separating the wheat from the chaff one could say the content can be split into the following modules:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+h3 > p {
+	font-size: 0.7em ;
+	color: #79a4d2;
+	text-transform: none;
+	margin-bottom: 0;
+}
+.job-location {
+	color: #6883a5;
+	display: inline-block;
+}
+.margin-left-5px{
+	margin-left: 5px;
+}
+.margin-top-10px{
+	margin-top:10px;
+}
+.margin-top-20px{
+	margin-top:20px;
+}
+.negative-margin-left-20px{
+	margin-left: -20px;
+}
+.no-left-padding{
+	padding-left: 0px;
+}
+.cv h3{
+	font-size:17px;
+}
+.cv h5{
+	font-style: italic;
+	font-size: 14px;
+	color: gray;
+}
+.github-area{
+	color:black;
+}
+.width-100{
+	width: 100%;
+}
+.left-column h3{
+	color: #18385F;
+	font-family:monospace;
+}
+footer {
+	display: flex;
+	padding: 0 25px;
+	align-items: center;
+}
+#leanmind-logo {
+	max-width: 85px;
+	margin: 15px;
+}
+#tails-logo {
+	max-width: 90px;
+}

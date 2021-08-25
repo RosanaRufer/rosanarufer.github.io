@@ -2,36 +2,36 @@
   {
     "name": "contact",
     "path": "/contact",
-    "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/contact.vue",
+    "component": "/Users/rosanarufer/Dev/Repos/rosanarufer.github.io/pages/contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_a6d8791c"
+    "_name": "_612804e4"
   },
   {
     "name": "cv",
     "path": "/cv",
-    "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/cv.vue",
+    "component": "/Users/rosanarufer/Dev/Repos/rosanarufer.github.io/pages/cv.vue",
     "chunkName": "pages/cv",
-    "_name": "_2c7fc491"
+    "_name": "_5d0aae16"
   },
   {
     "name": "lists",
     "path": "/lists",
-    "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/lists.vue",
+    "component": "/Users/rosanarufer/Dev/Repos/rosanarufer.github.io/pages/lists.vue",
     "chunkName": "pages/lists",
-    "_name": "_d235b232"
+    "_name": "_7f7d3803"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug?",
-    "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/blog/_slug.vue",
+    "component": "/Users/rosanarufer/Dev/Repos/rosanarufer.github.io/pages/blog/_slug.vue",
     "chunkName": "pages/blog/_slug",
-    "_name": "_27f8e3fb"
+    "_name": "_108b245f"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/rosana/03_Personal_Projects/rosanarufer.github.io/pages/index.vue",
+    "component": "/Users/rosanarufer/Dev/Repos/rosanarufer.github.io/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_a2a3f4b8"
+    "_name": "_d173d280"
   }
 ]
